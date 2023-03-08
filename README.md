@@ -11,10 +11,12 @@ English subtitles into Swedish and other foreign language videos
 
 ## Example
 
-```make infile='foreign-language-video.mp4'```
+Make sure the Makefile of this project and the video file 'foreign-language-video.mp4' is in the same directory. Then:
+
+```make infile='german-language-video.mp4' whisper_dir='path-to-whisper.cpp' language_code='de'```
 
 Gives a video "foreign-language-video.mp4.english-subtitles.mp4"
-with massive English subtitles burnt in
+with massive English subtitles burnt in.
 
 ## Usage
 
