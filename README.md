@@ -18,8 +18,8 @@ with massive English subtitles burnt in
 
 ## Usage
 
-```make infile='<video file>' whisper_dir='<path-to-whisper.cpp>'
-   language_code='<video language code>'```
+    ```make infile='video file' whisper_dir='path-to-whisper.cpp'
+   language_code='video language code'```
 
 * If video language isn't set, sv (Swedish) as language code
 is assumed.
