@@ -20,9 +20,9 @@ with massive English subtitles burnt in
 
 ```./burn-in-subs.sh [video file] [path-to-whisper.cpp] [video language code]```
 
--If video language isn't set, sv (Swedish) as language code
+* If video language isn't set, sv (Swedish) as language code
 is assumed.
--If on top of that, whisper path isn't set,
+* If on top of that, whisper path isn't set,
 current directory is assumed.
 
 ## Prerequisites
