@@ -11,19 +11,18 @@ English subtitles into Swedish and other foreign language videos
 
 ## Example
 
-```./burn-in-subs.sh swedish-video.mp4 /home/user/whisper-cpp sv```
+```make infile='foreign-language-video.mp4'```
 
-Gives a video "swedish-video.mp4.english-subtitles.mp4"
+Gives a video "foreign-language-video.mp4.english-subtitles.mp4"
 with massive English subtitles burnt in
 
 ## Usage
 
-```./burn-in-subs.sh [video file] [path-to-whisper.cpp] [video language code]```
+```make infile='[video file]' whisper_dir='[path-to-whisper.cpp]'
+   language_code='[video language code]'```
 
 * If video language isn't set, sv (Swedish) as language code
 is assumed.
-* If on top of that, whisper path isn't set,
-current directory is assumed.
 
 ## Prerequisites
 
