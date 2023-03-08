@@ -25,16 +25,26 @@ is assumed.
 -If on top of that, whisper path isn't set,
 current directory is assumed.
 
-PREREQUISITES
-For debian-like distros below
+## Prerequisites
+
+For debian-like distros below.
+
 Install build-essential:
+
     sudo apt install build-essential
 
-Download whisper.cpp from https://github.com/ggerganov/whisper.cpp
+Download whisper.cpp from <https://github.com/ggerganov/whisper.cpp>
+
 Compile it with make
+
 Download the largest language model; it has Swedish and others in it
+
 Make sure ffmpeg is installed:
+
     sudo apt install ffmpeg
+    
 Make sure sox is installed:
+
     sudo apt install sox
+    
 Make sure perl is installed (it probably already is)
