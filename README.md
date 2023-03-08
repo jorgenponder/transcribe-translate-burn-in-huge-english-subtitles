@@ -5,11 +5,11 @@
 To automatically transcribe, translate and then burn huge  
 English subtitles into Swedish and other foreign language videos
 
--Tested with ffmpeg version "4.4.2-0ubuntu0.22.04.1"
--Uses whisper.cpp for the transcription part.
--No error handling currently, feel free to fork or port!
+* Tested with ffmpeg version "4.4.2-0ubuntu0.22.04.1"
+* Uses whisper.cpp for the transcription part.
+* No error handling currently, feel free to fork or port!
 
-##Example
+## Example
 
 ```./burn-in-subs.sh swedish-video.mp4 /home/user/whisper-cpp sv```
 
