@@ -15,7 +15,7 @@ Make sure the Makefile of this project and the video file 'foreign-language-vide
 
 ```make infile='german-language-video.mp4' whisper_dir='path-to-whisper.cpp' language_code='de'```
 
-Gives a video "foreign-language-video.mp4.english-subtitles.mp4"
+Gives a video "german-language-video.mp4.english-subtitles.mp4"
 with massive English subtitles burnt in.
 
 ## Usage
