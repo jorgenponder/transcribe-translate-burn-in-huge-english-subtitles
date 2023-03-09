@@ -2,8 +2,7 @@
 
 ## Purpose
 
-To automatically transcribe, translate and then burn huge  
-English subtitles into Swedish and other foreign language videos in one step. And allow you to optionally edit the subtitles on the way, and rerun the build.
+To automatically transcribe, translate and then burn huge English subtitles into Swedish and other foreign language videos in one step. And allow you to optionally edit the subtitles on the way, and rerun the build.
 
 * Tested with ffmpeg version "4.4.2-0ubuntu0.22.04.1"
 * Uses whisper.cpp for the transcription part.
