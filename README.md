@@ -1,4 +1,4 @@
-# transcribe-then-burn-in-huge-english-subtitles
+# transcribe-translate-burn-in-huge-english-subtitles
 
 ## Purpose
 
