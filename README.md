@@ -18,7 +18,7 @@ English subtitles into Swedish and other foreign language videos in one step. An
 
 ## Example
 
-Make sure the Makefile of this project and the video file 'swedish-language-video.mp4' is in the same directory. Then:
+Make sure the Makefile of this project and e.g. a video file 'swedish-language-video.mp4' is in the same directory. Then:
 
 ```make infile='swedish-language-video.mp4' whisper_dir='path-to-whisper.cpp' language_code='sv'```
 
@@ -48,3 +48,19 @@ Make sure sox is installed:
     sudo apt install sox
     
 Make sure perl is installed (it probably already is)
+
+## Workflow
+
+The Makefile will not redo steps that are already up to date. So if you e.g. make a change to the subtitles file that is generated, the steps before that won't be rerun.
+
+The steps that the program (i.e. the Makefile) performs are the following:
+
+* Extract the audio as a Wav file from the input video
+* Convert the Wav file to 16k sample rate, for whisper.cpp
+* Run Whisper.cpp with flags set to generate a subtitle file in English
+* Convert the .srt subtitles file to an .ass file where we can control font size and other things
+* Increase the font size
+* Burn the subtitles into a new video file with the original video in it
+
+
+```make clean``` will delete all created files, but not delete the input video file
