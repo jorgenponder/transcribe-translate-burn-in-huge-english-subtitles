@@ -62,4 +62,4 @@ The steps that the program (i.e. the Makefile) performs are the following:
 * Burn the subtitles into a new video file with the original video in it
 
 
-```make clean``` will delete all created files, but not delete the input video file
+```make clean infile='video file'``` will delete all created files, but not delete the input video file
