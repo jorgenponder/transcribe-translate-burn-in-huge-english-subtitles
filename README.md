@@ -26,7 +26,7 @@ with massive English subtitles burnt in.
 
 ## Prerequisites
 
-For debian-like distros below.
+For Debian-like Linux distros below. It may work out of the box on MacOS, or with small changes. You could probably get it to run on Windows with some modifications. Tested on Ubuntu 22.04 LTS.
 
 Install build-essential:
 
