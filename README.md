@@ -38,7 +38,7 @@ Compile it with make
 
 Download the largest language model; it has Swedish and others in it
 
-./download-ggml-model.sh large```
+```cd models; ./download-ggml-model.sh large```
 
 Make sure ffmpeg is installed:
 
