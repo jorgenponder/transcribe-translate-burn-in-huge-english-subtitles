@@ -73,7 +73,7 @@ The steps that the program (i.e. the Makefile) performs are the following:
 
 ## The bonus video-to-transcript-in-original-language.makefile
 
-An extra makefile called ´´´video-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the video, in the same language as the video language.
+An extra makefile called ```video-to-transcript-in-original-language.makefile``` has been added. It writes out an .srt file based on what is said in the video, in the same language as the video language.
 
 Usage:
 
@@ -81,7 +81,7 @@ make -f video-to-transcript-in-original-language.makefile infile='mp3 file' whis
 
 ## The bonus mp3-to-transcript-in-original-language.makefile
 
-Since there was a need to also transcribe radio programs or podcasts in the original language,  an extra makefile called ´´´mp3-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the mp3 file,, in the same language as in the mp3 file.
+Since there was a need to also transcribe radio programs or podcasts in the original language,  an extra makefile called ```mp3-to-transcript-in-original-language.makefile``` has been added. It writes out an .srt file based on what is said in the mp3 file,, in the same language as in the mp3 file.
 
 Usage:
 
