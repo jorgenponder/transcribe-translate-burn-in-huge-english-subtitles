@@ -77,7 +77,7 @@ An extra makefile called ```video-to-transcript-in-original-language.makefile```
 
 Usage:
 
-make -f video-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
+    make -f video-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
 
 ## The bonus mp3-to-transcript-in-original-language.makefile
 
@@ -85,4 +85,4 @@ Since there was a need to also transcribe radio programs or podcasts in the orig
 
 Usage:
 
-make -f mp3-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
+    make -f mp3-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
