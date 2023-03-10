@@ -50,6 +50,10 @@ Make sure sox is installed:
     
 Make sure perl is installed (it probably already is)
 
+If you are going to use the mp3-to-transcript-in-original-language.makefile , you also need to install mpg123:
+
+    sudo apt install mpg123
+
 ## Workflow
 
 The Makefile will not redo steps that are already up to date. So if you e.g. make a change to the subtitles file that is generated, the steps before that won't be rerun.
@@ -65,3 +69,11 @@ The steps that the program (i.e. the Makefile) performs are the following:
 
 
 ```make clean infile='video file'``` will delete all created files, but not delete the input video file
+
+## The bonus mp3-to-transcript-in-original-language.makefile
+
+Since there was a need to also transcribe radio programs or podcasts in the original language,  an extra makefile called ´´´mp3-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the mp3 file.
+
+Usage:
+
+make -f mp3-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
