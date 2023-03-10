@@ -7,6 +7,7 @@ To automatically transcribe, translate and then burn huge English subtitles into
 * Tested with ffmpeg version "4.4.2-0ubuntu0.22.04.1"
 * Uses whisper.cpp for the transcription part.
 * No error handling currently, feel free to fork or port!
+* Two bonus makefiles for radio programs and videos with transcription but with no translation, see end of this Readme
 
 ## Usage
 
@@ -70,9 +71,17 @@ The steps that the program (i.e. the Makefile) performs are the following:
 
 ```make clean infile='video file'``` will delete all created files, but not delete the input video file
 
+## The bonus video-to-transcript-in-original-language.makefile
+
+An extra makefile called ´´´video-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the video, in the same language as the video language.
+
+Usage:
+
+make -f video-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
+
 ## The bonus mp3-to-transcript-in-original-language.makefile
 
-Since there was a need to also transcribe radio programs or podcasts in the original language,  an extra makefile called ´´´mp3-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the mp3 file.
+Since there was a need to also transcribe radio programs or podcasts in the original language,  an extra makefile called ´´´mp3-to-transcript-in-original-language.makefile´´´ has been added. It writes out an .srt file based on what is said in the mp3 file,, in the same language as in the mp3 file.
 
 Usage:
 
