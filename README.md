@@ -1,4 +1,4 @@
-# transcribe-translate-burn-in-huge-english-subtitles
+# Transcribe, translate, burn in huge english subtitles
 
 ## Purpose
 
