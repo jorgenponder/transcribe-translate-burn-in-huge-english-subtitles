@@ -16,6 +16,8 @@ There is also the possibility to automatically make same language transcripts fr
 
 ## Usage
 
+Please note, do not have any spaces in your file names! This project uses Gnu Make, and it cannot handle that. See <https://savannah.gnu.org/bugs/?712>
+
 ```make infile='video file' whisper_dir='path-to-whisper.cpp' language_code='video language code'```
 
 * If video language isn't set, ```sv``` (Swedish) as language code is assumed.
