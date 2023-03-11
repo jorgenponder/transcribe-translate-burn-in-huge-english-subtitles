@@ -2,11 +2,16 @@
 
 ## Purpose
 
-To automatically transcribe, translate and then burn huge English subtitles into Swedish and other foreign language videos in one step. And allow you to optionally edit the subtitles on the way, and rerun the build.
+* It can be tedious to do the 6-7 steps needed to subtitle a foreign language video or video snippet into English, and it also involves several different programs
+
+* Sometimes it's quicker to read a transcript than listen to a radio show, podcast or video, to find what's interesting
+ 
+This project automatically transcribes, translates and then burns huge English subtitles into Swedish and other foreign language videos in one step. And allows you to optionally edit the subtitles on the way, and rerun the build.
+
+There is also the possibility to automatically make same language transcripts from video and mp3 files.
 
 * Tested with ffmpeg version "4.4.2-0ubuntu0.22.04.1"
-* Uses whisper.cpp for the transcription part.
-* No error handling currently, feel free to fork or port!
+* Uses whisper.cpp for the transcription and translation parts.
 * Two bonus makefiles for radio programs and videos with transcription but with no translation, see end of this Readme
 
 ## Usage
