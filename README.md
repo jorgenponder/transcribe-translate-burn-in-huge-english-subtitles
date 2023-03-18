@@ -100,7 +100,7 @@ You can change the font and font foreground color directly in the generated .ass
 
 ### Color
 
-It seems like the color spec is in RGB but backwards, that is BGR format. &H6699ff``` seems to give a nice orange color. The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```
+It seems like the color spec is in RGB but backwards, that is BGR format. ```&H6699ff``` seems to give a nice orange color. The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```
 
 Here's an example:
 
