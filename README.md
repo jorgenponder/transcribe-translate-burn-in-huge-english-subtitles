@@ -22,7 +22,7 @@ Please note, do not have any spaces in your file names! This project uses Gnu Ma
 
 * If video language isn't set, ```sv``` (Swedish) as language code is assumed.
 * If path to whisper isn't set, ```.``` (current directory) is assumed.
-* If font_name isn't set, ```.``` (Ubuntu Bold) is assumed.
+* If font_name isn't set, ```Ubuntu Bold``` is assumed. If that doesn't work it probably reverts to Arial.
 
 
 ## Example
