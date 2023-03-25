@@ -11,7 +11,7 @@ $(infile).16k.wav.srt : $(infile).16k.wav
 $(infile).16k.wav : $(infile).wav
 		sox $(infile).wav -r16k $(infile).16k.wav
 $(infile).wav : $(infile)
-		ffmpeg -i $(infile) $(infile).wav
+		ffmpeg -y -i $(infile) $(infile).wav
 .PHONY : clean
 clean :
 		rm $(infile).wav $(infile).16k.wav $(infile).16k.wav.srt \
