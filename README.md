@@ -18,10 +18,12 @@ There is also the possibility to automatically make same language transcripts fr
 
 Please note, do not have any spaces in your file names! This project uses Gnu Make, and it cannot handle that. See <https://savannah.gnu.org/bugs/?712>
 
-```make infile='video file' whisper_dir='path-to-whisper.cpp' language_code='video language code'```
+```make infile='video file' whisper_dir='path-to-whisper.cpp' language_code='video language code' language_code='fontname'```
 
 * If video language isn't set, ```sv``` (Swedish) as language code is assumed.
 * If path to whisper isn't set, ```.``` (current directory) is assumed.
+* If font_name isn't set, ```.``` (Ubuntu Bold) is assumed.
+
 
 ## Example
 
@@ -71,8 +73,6 @@ The steps that the program (i.e. the Makefile) performs are the following:
 * Extract the audio as a Wav file from the input video
 * Convert the Wav file to 16k sample rate, for whisper.cpp
 * Run Whisper.cpp with flags set to generate a subtitle file in English
-* Convert the .srt subtitles file to an .ass file where we can control font size and other things
-* Increase the font size
 * Burn the subtitles into a new video file with the original video in it
 
 
@@ -94,22 +94,6 @@ Usage:
 
     make -f mp3-to-transcript-in-original-language.makefile infile='mp3 file' whisper_dir='path-to-whisper.cpp' language_code='audio language code'
 
-## A note on subtitle fonts and colors
-
-You can change the font and font foreground color directly in the generated .ass file. When re-running make, only the last subtitling step will then be performed.
-
-### Color
-
-It seems like the color spec is in RGB but backwards, that is BGR format. ```&H6699ff``` seems to give a nice orange color.
-
-Setting the outline color to white, i.e. ```&Hffffff``` seems to helt the text pop a bit too.
-
 ### Font
 
-The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```
-
-Here's an example:
-
-    [V4+ Styles]
-    Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-    Style: Default,DejaVu Sans Bold,48,&H6699ff,&H000000,&Hffffff,&H000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,0
+The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```.
