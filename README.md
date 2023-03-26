@@ -2,7 +2,7 @@
 
 ## Purpose
 
-* It can be tedious to do the 6-7 steps needed to subtitle a foreign language video or video snippet into English, and it also involves several different programs
+* It can be tedious to do the 3-4 steps needed to subtitle a foreign language video or video snippet into English, and it also involves several different programs
 
 * Sometimes it's quicker to read a transcript than listen to a radio show, podcast or video, to find what's interesting
  
