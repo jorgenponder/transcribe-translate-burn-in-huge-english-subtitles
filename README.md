@@ -56,8 +56,6 @@ Make sure ffmpeg is installed:
 
     sudo apt install ffmpeg
     
-Make sure perl is installed (it probably already is)
-
 If you are going to use the mp3-to-transcript-in-original-language.makefile , you also need to install mpg123:
 
     sudo apt install mpg123
