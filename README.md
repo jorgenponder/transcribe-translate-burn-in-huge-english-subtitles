@@ -54,15 +54,15 @@ Make sure ffmpeg is installed:
 
     sudo apt install ffmpeg
     
-Make sure sox is installed:
-
-    sudo apt install sox
-    
 Make sure perl is installed (it probably already is)
 
 If you are going to use the mp3-to-transcript-in-original-language.makefile , you also need to install mpg123:
 
     sudo apt install mpg123
+
+And sox:
+
+    sudo apt install sox
 
 ## Workflow
 
@@ -70,11 +70,9 @@ The Makefile will not redo steps that are already up to date. So if you e.g. mak
 
 The steps that the program (i.e. the Makefile) performs are the following:
 
-* Extract the audio as a Wav file from the input video
-* Convert the Wav file to 16k sample rate, for whisper.cpp
+* Extract the audio as a 16kHz Wav file from the input video
 * Run Whisper.cpp with flags set to generate a subtitle file in English
 * Burn the subtitles into a new video file with the original video in it
-
 
 ```make clean infile='video file'``` will delete all created files, but not delete the input video file
 
