@@ -16,13 +16,15 @@ There is also the possibility to automatically make same language transcripts fr
 
 ## Usage
 
-Please note, do not have any spaces in your file names! This project uses Gnu Make, and it cannot handle that. See <https://savannah.gnu.org/bugs/?712>
+Please note, do not have any spaces in your file names! This project uses Gnu Make, and it cannot handle that. See <https://savannah.gnu.org/bugs/?712>. It also doesn't like brackets and probably a lot of other seedy characters.
 
 ```make infile='video file' whisper_dir='path-to-whisper.cpp' language_code='video language code' font_name='fontname'```
 
 * If video language isn't set, ```sv``` (Swedish) as language code is assumed.
 * If path to whisper isn't set, ```.``` (current directory) is assumed.
 * If font_name isn't set, ```Ubuntu Bold``` is assumed. If that doesn't work it probably reverts to Arial.
+
+You can probably put these in environment variables too, bot not tested enough yet.
 
 
 ## Example
