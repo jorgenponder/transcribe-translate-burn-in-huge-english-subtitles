@@ -1,6 +1,6 @@
-infile=PHONY
-whisper_dir=.
-language_code=sv
+infile?=PHONY
+whisper_dir?=.
+language_code?=sv
 
 $(infile).wav.srt : $(infile).wav
 		$(whisper_dir)/main --model $(whisper_dir)/models/ggml-large.bin -l $(language_code) -osrt -f $(infile).wav
