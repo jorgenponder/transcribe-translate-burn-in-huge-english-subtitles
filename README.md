@@ -95,3 +95,8 @@ Usage:
 ### Font
 
 The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```.
+
+
+## CPU Choices
+
+Whisper.cpp has a benchmark feature. Currently for the large language model, the champs are the Apple M1 and M2 CPUs with about 5 seconds, After them the fastest Intel compatible sees to be AMD Ryzen 9 at around 10 seconds. Thereafter the fastest Intel seems to be around 20 seconds. My AMD Ryzen 5 laptop at around 90 seconds, an 7 year old Intel i3 NUC at around 450 seconds.
