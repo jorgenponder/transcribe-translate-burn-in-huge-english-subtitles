@@ -96,6 +96,11 @@ Usage:
 
 The font can be changed but it does not like commas in the font name but it seems to work fine with commas omitted. One bold choice if you have it installed is ```DejaVu Sans Bold```.
 
+### Formatting and presentation options
+
+There is now a "label" field at the top left that can be used to put in e.g. a date. It will be rendered throughout the video.
+
+There are some experimental formatting features for the subtitles, that may or may not work, depedning on what substation alpha features are available in ffmpeg in general and in the specific ffpmeg binary used, in particular.
 
 ## CPU Choices
 
